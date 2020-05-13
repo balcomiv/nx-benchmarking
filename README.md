@@ -84,5 +84,15 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
 
 ## Helpful Commands
+- node ./apps/seed-app/test-fun
 - npx create-nx-workspace@latest 
-- 
+
+
+## Create multiple components
+for($i = 0; $i -lt 300; $i++) {
+  $var = -join ((65..90) + (97..122) | Get-Random -Count 5 | % {[char]$_})
+  Write-Output "ng g c test-components/test-$var --project=seed-app"
+}
+
+
+- new nx-benchmarking-karma --preset="angular" --appName="seed-app" --style="scss" --interactive=false --collection=@nrwl/workspace
